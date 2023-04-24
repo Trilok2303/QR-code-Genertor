@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    --background-color:#171717;
+    --accent-color: #DA0037;
+    --light-gray: #212121;
+    --corners: 8px;
+    height:100%;
+
+
+    font-family: 'Lato', sans-serif;
+    background-color: var(--background-color);
+    color: white;
+}
+
+header{
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+    background-color: #212121;
+    font-weight: 300;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+header span{
+    color: var(--accent-color);
+}
+
+header strong{
+    font-size: 1.5rem;
+}
+
+.content-wrapper{
+    width: 90%;
+    max-width: 1100px;
+    margin:80px auto;
+    display: flex;
+    gap:26px;
+    justify-content: space-around;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+textarea{
+    border: 1px solid var(--accent-color);
+    border-radius: var(--corners);
+    padding: 8px;
+    background-color: rgba(217, 217, 217, 0.04);
+    color: white;
+}
+
+textarea:focus{
+    outline: 1px solid var(--accent-color);
+}
+
+br{
+    display: block;
+     content: "";
+    margin: 20px 0;
+}
+
+input{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--accent-color);
+    border-radius: 6px;
+    padding: 8px;
+    background-color: rgba(217, 217, 217, 0.04);
+    appearance: none;
+    margin: 0 20px;
+}
+
+select{
+    margin: 12px 10px;
+    background-color: rgba(217, 217, 217, 0.04);
+    color: white;
+    border: 1px solid var(--accent-color);
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.qr-wrapper{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:26px;
+}
+
+.qr-code-wrapper{
+    padding: 26px;
+    background-color: white;
+    border-radius: var(--corners);
+}
+
+button{
+    width: fit-content;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding:16px 32px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+}
+
+@media  screen and (max-width: 768px){
+    .content-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap:36px;
+    }
+}
+
+@media  screen and (max-width: 375px){
+
+    textarea{ 
+        width: 100%;
+    }
+}
+
+
